@@ -43,8 +43,8 @@ COPY ./src /code
 # Install the Python project requirements
 RUN pip install -r /tmp/requirements.txt
 
-ARG DJANGO_SECRET_KEY
-ENV DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
+# ARG DJANGO_SECRET_KEY
+# ENV DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
 
 ARG DJANGO_DEBUG
 ENV DJANGO_DEBUG=${DJANGO_DEBUG}
