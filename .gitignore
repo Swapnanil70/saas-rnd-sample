@@ -4,6 +4,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Ignore vendor static files
+src/staticfiles/vendors/
+
+# Ignore local static files root 
+# Ignore local-cdn
+local-cdn/
+
 # C extensions
 *.so
 
